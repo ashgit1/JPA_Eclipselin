@@ -6,10 +6,8 @@
 
 	<persistence-unit name="JPA_Eclipselink" transaction-type="RESOURCE_LOCAL">
 
-	<class>com.ashish.eclipselink.entity.Staff</class>
-	<class>com.ashish.eclipselink.entity.NonTeachingStaff</class>
-	<class>com.ashish.eclipselink.entity.TeachingStaff</class>
-      
+	<class>com.ashish.eclipselink.entity.Department</class>
+	<class>com.ashish.eclipselink.entity.Employee</class>
       
 		<properties>
 		  <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
