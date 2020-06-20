@@ -10,6 +10,9 @@
 	<class>com.ashish.eclipselink.entity.Staff</class>
 	<class>com.ashish.eclipselink.entity.NonTeachingStaff</class>
 	<class>com.ashish.eclipselink.entity.TeachingStaff</class>
+	<class>com.ashish.eclipselink.entity.Student</class>
+	<class>com.ashish.eclipselink.entity.NonTeachingStudent</class>
+	<class>com.ashish.eclipselink.entity.TeachingStudent</class>
 		
 		<properties>
 		  <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
