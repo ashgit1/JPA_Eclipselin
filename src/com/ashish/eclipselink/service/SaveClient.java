@@ -3,13 +3,12 @@ package com.ashish.eclipselink.service;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+
 import com.ashish.eclipselink.entity.NonTeachingStaff;
 import com.ashish.eclipselink.entity.TeachingStaff;
 
 public class SaveClient {
-
-	public static void main(String args[]) {
-
+	public static void main(String[] args) {
 		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("JPA_Eclipselink");
 		EntityManager entitymanager = emfactory.createEntityManager();
 		entitymanager.getTransaction().begin();
@@ -29,10 +28,7 @@ public class SaveClient {
 		entitymanager.persist(nts2);
 
 		entitymanager.getTransaction().commit();
-
 		entitymanager.close();
 		emfactory.close();
-
 	}
-
 }

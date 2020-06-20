@@ -1,12 +1,9 @@
 package com.ashish.eclipselink.entity;
 
-import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue(value = "NS")
 public class NonTeachingStaff extends Staff {
-
 	private static final long serialVersionUID = 1L;
 	
 	private String areaexpertise;
@@ -27,5 +24,4 @@ public class NonTeachingStaff extends Staff {
 	public void setAreaexpertise(String areaexpertise) {
 		this.areaexpertise = areaexpertise;
 	}
-
 }

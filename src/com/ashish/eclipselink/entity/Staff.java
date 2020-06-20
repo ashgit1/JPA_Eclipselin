@@ -1,7 +1,7 @@
 package com.ashish.eclipselink.entity;
 
 import java.io.Serializable;
-import javax.persistence.DiscriminatorColumn;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,15 +12,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "type")
-
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Staff implements Serializable {
-	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+
 	private int sid;
 	private String sname;
 
@@ -49,5 +47,4 @@ public class Staff implements Serializable {
 	public void setSname(String sname) {
 		this.sname = sname;
 	}
-
 }
